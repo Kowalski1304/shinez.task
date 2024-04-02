@@ -22,16 +22,3 @@ $response = curl_exec($curl);
 curl_close($curl);
 
 $result = json_decode($response, true);
-
-if ($result['status']) {
-    foreach ($result['data'] as $lead) {
-        echo "<tr>";
-        echo "<td>{$lead['id']}</td>";
-        echo "<td>{$lead['email']}</td>";
-        echo "<td>{$lead['status']}</td>";
-        echo "<td>{$lead['ftd']}</td>";
-        echo "</tr>";
-    }
-} else {
-    echo "<h1>" . ($result['error']) . "</h1>" ;
-}
