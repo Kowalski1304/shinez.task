@@ -1,1 +1,3 @@
-# shinez.task
+# Shinez TASK
+
+Тестове завдання
