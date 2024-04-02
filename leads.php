@@ -24,6 +24,19 @@
 
     <?php
     include_once('getLeads.php');
+
+    if ($result['status']) {
+        foreach ($result['data'] as $lead) {
+            echo "<tr>";
+            echo "<td>{$lead['id']}</td>";
+            echo "<td>{$lead['email']}</td>";
+            echo "<td>{$lead['status']}</td>";
+            echo "<td>{$lead['ftd']}</td>";
+            echo "</tr>";
+        }
+    } else {
+        echo "<h1>" . ($result['error']) . "</h1>" ;
+    }
     ?>
     </tbody>
 </table>
