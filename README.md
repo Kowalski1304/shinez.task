@@ -1,4 +1,4 @@
 # Shinez TASK
 
 Тестове завдання
-http://shinez.task/leads.php
+http://shineztask.42web.io/index.html
